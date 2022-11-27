@@ -1,0 +1,51 @@
+.Cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:20px;
+    margin-top: 50px;
+    margin-left:20px;
+}
+
+.clash{
+    max-width: 525px;
+    margin-bottom: 40px;
+}
+
+.Cover > p{
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border:solid purple 3px;
+    padding: 10px;
+    animation: 4s fou forwards;
+
+}
+
+@keyframes fou{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Cover{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;     
+    }
+
+    .clash{
+        width:400px;
+        margin-left: -10px;
+        margin-top: 20px;
+    }
+    
+    
+}

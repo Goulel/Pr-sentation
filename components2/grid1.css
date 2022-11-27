@@ -1,0 +1,36 @@
+.Int{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap:30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.Int img{
+    width: 70%;
+}
+
+.expl{
+    border:solid purple 3px;
+    margin-left: 20px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@media screen and (max-width:800px) {
+    .Int{
+        grid-template-columns: 1fr;
+    }
+
+    .Int img{
+        margin-left: 25px;
+        margin-bottom: 20px;
+        width:90%;
+        
+    }
+
+    .expl{
+        margin-right: 10px;
+    }
+}
